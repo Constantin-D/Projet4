@@ -1,6 +1,8 @@
-
-
-
-h1 {
-    color: red;
+header {
+  background: #000;
 }
+header h1 {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
