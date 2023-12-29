@@ -9,10 +9,11 @@
 //Layout
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
+@import "./layout/header-menus.scss";
 
 // Pages
 @import "./pages/main.scss";
-@import "./pages/menus.scss";
+@import "./pages/main-menus.scss";
 
 // Components
 @import "./components/menus.scss";
@@ -20,3 +21,5 @@
 @import "./components/hero.scss";
 @import "./components/functioning.scss";
 @import "./components/restaurants.scss";
+@import "./components/banner-menus.scss";
+@import "./components/button-order.scss";

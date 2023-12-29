@@ -1,0 +1,10 @@
+/*********** En-tête ********/
+.header-menu {
+    position: relative;
+
+    & .fa-arrow-left {
+        position: absolute;
+        right: 90%;
+        top: 40%;
+    }
+}
