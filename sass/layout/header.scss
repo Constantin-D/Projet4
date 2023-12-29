@@ -1,13 +1,20 @@
 /****** En-tête de page ******/
 header {
-    font-family: shrikhand;
+    font-family: 'shrikhand', sans-serif;
     text-align: center;
+    @include header-shadow;
+    z-index: 1;
+    padding: $padding;
+    // position: relative;
 }    
-h1 {
-margin-bottom: 0;
-box-shadow: 0 15px 15px lightgrey;
 
-}
+@media screen and (min-width:756px) {}
+
+@media screen and (min-width:990px) {}
+
+@media screen and (min-width:1200px) {}
+
+
 
 
 

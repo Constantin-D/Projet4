@@ -1,6 +1,10 @@
+//base
+@import "./base/overall.scss";
+
 //Utils
 @import "./utils/reset.scss";
 @import "./utils/variables.scss";
+@import "./utils/mixins.scss";
 
 //Layout
 @import "./layout/header.scss";
@@ -8,6 +12,11 @@
 
 // Pages
 @import "./pages/main.scss";
+@import "./pages/la_palette.scss";
 
 // Components
-@import "./components/cards.scss"
+@import "./components/menus.scss";
+@import "./components/location.scss";
+@import "./components/hero.scss";
+@import "./components/functioning.scss";
+@import "./components/restaurants.scss";

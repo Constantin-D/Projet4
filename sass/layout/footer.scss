@@ -1,0 +1,29 @@
+/****** Pied de page ******/
+.links {
+    background-color: black;
+    width: 100%;
+    color: white;
+    // position: relative;
+    // bottom: -9rem;
+}
+
+.connections {
+    display: flex;
+    flex-direction: column;
+    padding: $padding;
+}
+
+.connections h4 {
+    font-family: 'shrikhand', sans-serif;
+}
+
+.connections a {
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width:756px) {}
+
+@media screen and (min-width:990px) {}
+
+@media screen and (min-width:1200px) {}
+

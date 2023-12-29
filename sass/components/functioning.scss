@@ -1,0 +1,49 @@
+/****** Section Fonctionnement ******/
+.functioning-container {
+    padding: $padding;
+    padding-top: 2.2rem;
+
+    &__btn-function {
+        display: flex;
+        align-items: center;
+        gap: 10%;
+        font-weight: bold;
+        width: 90%;
+        height: 4.5rem;
+        background-color: $light-grey;
+        border-radius: 1.2rem;
+        border: 0.5rem;
+        box-shadow: 0 12px 4px 0 rgba($color: #000000, $alpha: 0.1);
+        margin-bottom: 1.5rem;
+        margin-right: auto;
+        margin-left: auto;
+        
+        & .icon-nbr {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            font-size: small;
+            font-weight: 400;
+            width: 1.5rem;
+            height: 1.5rem;
+            color: white;
+            background: $purple;
+            border-radius: 50%;
+            margin-left: -0.8rem;
+        }
+
+        & .fa-store {
+            color: $purple;
+        }
+    }
+}
+
+.functioning-container a:hover {
+    @include hover-effect;
+}
+
+@media screen and (min-width:756px) {}
+
+@media screen and (min-width:990px) {}
+
+@media screen and (min-width:1200px) {}

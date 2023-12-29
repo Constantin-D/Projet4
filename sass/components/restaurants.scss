@@ -1,0 +1,78 @@
+/****** Section Restaurants ******/
+.restaurant {
+    display: flex;
+    flex-direction: column;
+    background-color: $light-grey;
+    background-size: 100%;
+    padding: $padding;
+
+    margin: 0;
+}
+
+.card-restaurant {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: white;
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 1.3rem;
+
+    .card {
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 11rem;
+            border-radius: 15px 15px 0 0;
+            object-fit: cover;
+        }
+
+        span {
+            text-align: center;
+            position: absolute;
+            font-weight: bold;
+            color: $green;
+            padding: 0.2rem;
+            top: 5%;
+            right: 7%;
+            width: 5rem;
+            border: none;
+            border-radius: 2px;
+            background-color: $light-green;
+
+
+        }
+    }
+
+}
+
+.card-content h4,
+p {
+    padding-top: 0.5rem;
+    padding-left: 0.7rem;
+    margin: 0;
+}
+
+.card-heart {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    right: 1.2rem;
+    bottom: 3rem;
+    font-size: 1.5rem;
+}
+
+.fa-heart:hover {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: transparent;
+    background-clip: text, ;
+    background-image:linear-gradient(to bottom, $purple, $pink );
+}
+
+@media screen and (min-width:756px) {}
+
+@media screen and (min-width:990px) {}
+
+@media screen and (min-width:1200px) {}
