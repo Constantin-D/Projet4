@@ -25,17 +25,30 @@ a {
   text-decoration: none;
 }
 
-.card img {
+img {
   object-fit: cover;
 }
 
+@keyframes slideup-menu {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 /****** En-tête de page ******/
 header {
-  font-family: "shrikhand", sans-serif;
   text-align: center;
-  box-shadow: 0 6px 15px lightgrey;
   z-index: 1;
   padding: 0 1.5rem;
+}
+header .fa-arrow-left {
+  position: absolute;
+  left: 10%;
+  top: 25%;
 }
 
 /****** Pied de page ******/
@@ -65,31 +78,34 @@ header {
 }
 .header-menu .fa-arrow-left {
   position: absolute;
-  right: 90%;
-  top: 40%;
+  left: 10%;
+  top: 25%;
 }
 
 .main-menus {
   display: flex;
   flex-direction: column;
   padding: 0 1.5rem;
+  position: relative;
+  border-radius: 1.2rem 1.2rem 0 0;
   margin-top: -3rem;
-}
-.main-menus h2 {
-  font-family: "shrikhand", sans-serif;
-  font-size: 1.8rem;
+  background-color: #f6f6f6;
 }
 .main-menus .title-restaurant {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+.main-menus .title-restaurant h1 {
+  font-family: "shrikhand", sans-serif;
+}
 .main-menus .title-restaurant .fa-heart {
   font-size: 1.5rem;
 }
-.main-menus .titled span {
+.main-menus .titled::after {
+  content: "";
   display: block;
-  width: 2.5rem;
+  width: 3.5rem;
   height: 2px;
   background: #99e2d0;
 }
@@ -106,25 +122,32 @@ header {
   margin-bottom: 1rem;
   border-radius: 1rem;
   box-shadow: 0 15.4px 4.01px 0 rgba(0, 0, 0, 0.1);
-}
-.btn-plate .plate {
-  font: size 17px;
+  animation: slideup-menu 3s;
 }
 .btn-plate .btn-plate__side-price {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  flex-direction: column;
   padding-top: 0;
   padding-right: 0.7rem;
+  position: relative;
+}
+.btn-plate .btn-plate__side-price .plate {
+  padding-top: 0.8rem;
+  padding-left: 0.7rem;
+  margin: 0;
 }
 .btn-plate .btn-plate__side-price .side-dish {
-  font-size: 15px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   padding-top: 0.3rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.8rem;
   margin: 0;
+}
+.btn-plate .btn-plate__side-price .price {
+  position: absolute;
+  right: 5%;
+  bottom: 20%;
 }
 
 /****** lieux ******/
@@ -200,6 +223,7 @@ header {
 .functioning-container__btn-function .icon-nbr {
   display: flex;
   text-align: center;
+  align-items: center;
   justify-content: center;
   font-size: small;
   font-weight: 400;
@@ -245,6 +269,7 @@ header {
   height: 11rem;
   border-radius: 15px 15px 0 0;
   object-fit: cover;
+  position: relative;
 }
 .card-restaurant .card span {
   text-align: center;
@@ -275,14 +300,13 @@ p {
   bottom: 3rem;
   font-size: 1.5rem;
 }
-
-.fa-heart:hover {
+.card-heart .fa-heart:hover {
   font-size: 1.5rem;
   font-weight: bold;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  transition-duration: 1.5s;
+  transition-duration: all 1.2s;
   background-image: linear-gradient(to bottom, #9356dc, #FF79DA);
 }
 
@@ -316,6 +340,16 @@ p {
 .order .btn-order:hover {
   opacity: 0.9;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.fa-heart:hover {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 1.5s ease-in-out;
+  background-image: linear-gradient(to bottom, #9356dc, #FF79DA);
 }
 
 /*# sourceMappingURL=style.css.map */

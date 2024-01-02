@@ -26,6 +26,7 @@
             height: 11rem;
             border-radius: 15px 15px 0 0;
             object-fit: cover;
+            position: relative;
         }
 
         span {
@@ -61,18 +62,14 @@ p {
     right: 1.2rem;
     bottom: 3rem;
     font-size: 1.5rem;
-    // @include animated-heart;
+
+    .fa-heart:hover {
+        @include animated-heart;
+    }
+
 }
 
-.fa-heart:hover {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    transition-duration: 1.5s;
-    background-image:linear-gradient(to bottom, $purple, $pink );
-}
+
 
 @media screen and (min-width:756px) {}
 
