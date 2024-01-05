@@ -10,7 +10,7 @@
 //Layout
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
-@import "./layout/header-menus.scss";
+// @import "./layout/header-menus.scss";
 
 // Pages
 @import "./pages/main.scss";
@@ -25,4 +25,4 @@
 @import "./components/banner-menus.scss";
 @import "./components/button-order.scss";
 @import "./components/animated-heart.scss";
-
+@import "./components/loader.scss";

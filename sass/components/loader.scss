@@ -1,0 +1,38 @@
+.position {
+    position: fixed;
+    background-color: white;
+    z-index: 2;
+    opacity: 0.7;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid $purple;
+    border-bottom: 8px solid $pink;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        border-top: 8px solid $night-blue;
+        border-bottom: 8px solid $aqua;
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

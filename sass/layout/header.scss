@@ -5,7 +5,7 @@ header {
     // @include header-shadow;
     z-index: 1;
     padding: $padding;
-    // position: relative;
+    position: relative;
     & .fa-arrow-left {
             position: absolute;
             left: 10%;
@@ -13,31 +13,6 @@ header {
         }
 }
 
-// /*********** En-tête ********/
-// .header-menu {
-//     position: relative;
-
-//     & .fa-arrow-left {
-//         position: absolute;
-//         left: 10%;
-//         top: 25%;
-//     }
-// }
-// /* Styles pour la première page */
-// @page :first {
-//     .fa-arrow-left {
-//         display: none;
-//         /* Masquer l'élément sur la première page */
-//     }
-// }
-
-// /* Styles pour les pages suivantes (y compris la deuxième) */
-// @page :first {
-//     .fa-arrow-left {
-//         display: block;
-//         /* Afficher l'élément sur les pages suivantes */
-//     }
-// }
 
 @media screen and (min-width:756px) {}
 

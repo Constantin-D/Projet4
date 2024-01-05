@@ -1,4 +1,5 @@
 // ****** Carte du restaurant *****/
+
 .main-menus {
     display: flex;
     flex-direction: column;
@@ -42,23 +43,25 @@
 
 .btn-plate {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background: white;
     margin-bottom: 1rem;
     border-radius: 1rem;
     box-shadow: 0 15.4px 4.01px 0 rgba($color: #000000, $alpha: 0.1);
     // position: relative;
     animation: slideup-menu 3s;
-    // animation-delay: 2s;
+
+
 
 
     .btn-plate__side-price {
-        display: flex;
-        flex-direction: column;
+        // display: flex;
+        // flex-direction: row;
         // justify-content: space-between;
         padding-top: 0;
         padding-right: 0.7rem;
         position: relative;
+        width: 80%;
 
         .plate {
             padding-top: 0.8rem;
@@ -76,21 +79,36 @@
 
         }
 
-        .price {
-            position: absolute;
-            right: 5%;
-            bottom: 20%;
-        }
+
     }
-        // @keyframes slideup-menu {
-        //     0% {
-        //         transform: translateY(20px);
-        //         opacity: 0;
-        //     }
-    
-        //     100% {
-        //         transform: translateY(0);
-        //         opacity: 1;
-        //     }
-        // }
+
+    .price {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 20%;
+        padding-bottom: 10px;
+    }
+
+    .check {
+        width: 0;
+    }
+
+    &:hover .price {
+        width: 20%;
+    }
 }
+
+.d2 {
+    animation-delay: 1s;
+}
+
+
+
+
+
+@media screen and (min-width:756px) {}
+
+@media screen and (min-width:990px) {}
+
+@media screen and (min-width:1200px) {}
