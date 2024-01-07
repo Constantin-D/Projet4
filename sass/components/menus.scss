@@ -1,5 +1,7 @@
 // ****** Carte du restaurant *****/
 
+
+
 .main-menus {
     display: flex;
     flex-direction: column;
@@ -18,7 +20,7 @@
 
         h1 {
             font-family: 'shrikhand', sans-serif;
-            // font-size: 1.8rem;
+            font-size: 1.75rem;
         }
 
         .fa-heart {
@@ -48,37 +50,29 @@
     margin-bottom: 1rem;
     border-radius: 1rem;
     box-shadow: 0 15.4px 4.01px 0 rgba($color: #000000, $alpha: 0.1);
-    // position: relative;
     animation: slideup-menu 3s;
-
-
-
+    animation-fill-mode: backwards;
 
     .btn-plate__side-price {
-        // display: flex;
-        // flex-direction: row;
-        // justify-content: space-between;
         padding-top: 0;
         padding-right: 0.7rem;
         position: relative;
         width: 80%;
 
         .plate {
+            @include ellipsis;
             padding-top: 0.8rem;
             padding-left: 0.7rem;
             margin: 0;
         }
 
         .side-dish {
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
+            @include ellipsis;
             padding-top: 0.3rem;
             padding-bottom: 0.8rem;
             margin: 0;
 
         }
-
 
     }
 
@@ -91,7 +85,15 @@
     }
 
     .check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border-color: $light-green;
         width: 0;
+    }
+
+    &:hover .btn-plate__side-price {
+        width: 60%;
     }
 
     &:hover .price {
@@ -101,6 +103,10 @@
 
 .d2 {
     animation-delay: 1s;
+}
+
+.d3 {
+    animation-delay: 2s;
 }
 
 

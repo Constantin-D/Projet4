@@ -15,3 +15,10 @@
         transition-duration: all 1.2s;
         background-image: linear-gradient(to bottom, $purple, $pink );
 }
+
+@mixin ellipsis {
+    text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+}
+
