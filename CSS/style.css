@@ -42,14 +42,17 @@ img {
 /****** En-tête de page ******/
 header {
   text-align: center;
+  box-shadow: 0 6px 15px lightgrey;
   z-index: 1;
   padding: 0 1.5rem;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
   position: relative;
 }
 header .fa-arrow-left {
   position: absolute;
   left: 10%;
-  top: 25%;
+  top: 50%;
 }
 
 /****** Pied de page ******/
@@ -113,7 +116,7 @@ header .fa-arrow-left {
   background: white;
   margin-bottom: 1rem;
   border-radius: 1rem;
-  box-shadow: 0 15.4px 4.01px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
   animation: slideup-menu 3s;
   animation-fill-mode: backwards;
 }
@@ -143,6 +146,7 @@ header .fa-arrow-left {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  font-weight: 900;
   width: 20%;
   padding-bottom: 10px;
 }
@@ -150,7 +154,20 @@ header .fa-arrow-left {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 0;
+  width: 5rem;
+  background-color: #99e2d0;
+  border-radius: 0 1rem 1rem 0;
+}
+.btn-plate .check .fa-check {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #99e2d0;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: white;
+  border-radius: 50%;
 }
 .btn-plate:hover .btn-plate__side-price {
   width: 60%;
@@ -221,13 +238,14 @@ header .fa-arrow-left {
 .functioning-container {
   padding: 0 1.5rem;
   padding-top: 2.2rem;
+  padding-bottom: 2.2rem;
 }
 .functioning-container__btn-function {
   display: flex;
   align-items: center;
   gap: 10%;
   font-weight: bold;
-  width: 90%;
+  width: 97%;
   height: 4.5rem;
   background-color: #f6f6f6;
   border-radius: 1.2rem;
@@ -235,7 +253,7 @@ header .fa-arrow-left {
   box-shadow: 0 12px 4px 0 rgba(0, 0, 0, 0.1);
   margin-bottom: 1.5rem;
   margin-right: auto;
-  margin-left: auto;
+  margin-left: 0.8rem;
 }
 .functioning-container__btn-function .icon-nbr {
   display: flex;
@@ -259,6 +277,13 @@ header .fa-arrow-left {
   transform: scale(1.1);
 }
 
+@media screen and (min-width: 756px) {
+  .functioning-container__layout {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+  }
+}
 /****** Section Restaurants ******/
 .restaurant {
   display: flex;
@@ -291,6 +316,7 @@ header .fa-arrow-left {
 .card-restaurant .card span {
   text-align: center;
   position: absolute;
+  font-size: medium;
   font-weight: bold;
   color: #008766;
   padding: 0.2rem;
@@ -327,11 +353,17 @@ p {
   background-image: linear-gradient(to bottom, #9356dc, #FF79DA);
 }
 
+@media screen and (min-width: 756px) {
+  .card-restaurant {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .menus-container {
   background: #f6f6f6;
 }
 
-.menus-container .banner img {
+.menus-container__banner img {
   width: 100%;
   height: 17.1rem;
   padding: 0;
@@ -373,15 +405,17 @@ p {
   position: fixed;
   z-index: 5;
   top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: white;
-  opacity: 0.7;
+  opacity: 0.8;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fade-out 3s forwards;
+  animation: fade-out 3s linear forwards;
 }
 
 .loader {

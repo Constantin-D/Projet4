@@ -1,24 +1,22 @@
 /****** En-tête de page ******/
 header {
-    // font-family: 'shrikhand', sans-serif;
     text-align: center;
     // @include header-shadow;
+    box-shadow: 0 6px 15px lightgrey;
     z-index: 1;
     padding: $padding;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
     position: relative;
     & .fa-arrow-left {
             position: absolute;
             left: 10%;
-            top: 25%;
+            top: 50%;
         }
 }
 
 
-@media screen and (min-width:756px) {}
 
-@media screen and (min-width:990px) {}
-
-@media screen and (min-width:1200px) {}
 
 
 
