@@ -3,19 +3,25 @@
     background-color: black;
     width: 100%;
     color: white;
-    // position: relative;
-    // bottom: -9rem;
 }
 
-.connections {
+.links__footer-logo  {
+    padding: $padding;
+    padding-left: 1.5rem;
+    & h4 {
+        font-family: 'shrikhand', sans-serif;
+    }
+}
+
+.links__connections {
     display: flex;
     flex-direction: column;
     padding: $padding;
 }
 
-.connections h4 {
-    font-family: 'shrikhand', sans-serif;
-}
+// .connections h4 {
+//     font-family: 'shrikhand', sans-serif;
+// }
 
 .connections a {
     margin-bottom: 1rem;
@@ -24,8 +30,24 @@
 @media screen and (min-width:756px) {}
 
 @media screen and (min-width:990px) {
+    .links {
+        display: flex;
+        flex-direction: row-reverse;
+    }
     
+        .links__footer-logo {
+            
+        }
+    
+        .links__connections {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            // padding: $padding;
+        }
 }
 
-@media screen and (min-width:1200px) {}
+@media screen and (min-width:1200px) {
+    
+}
 

@@ -74,19 +74,13 @@ p {
 
 
 @media screen and (min-width:756px) {
-    .card-restaurant {
-        display: flex;
-        column-gap: 50px;
-            row-gap: 50px;
-        }
-        
-        .restaurants__flexbox {
-            display: flex;
-            flex-direction: column;
-            gap: 18px;
-        }
+   .card-restaurant {
+    display: flex;
+    justify-content: space-between;
 
-    }
+   }
+
+}
 
 
 

@@ -58,6 +58,7 @@
         padding-right: 0.7rem;
         position: relative;
         width: 80%;
+        transition: all 500ms ease-in-out;
 
         .plate {
             @include ellipsis;
@@ -82,15 +83,20 @@
         font-weight: 900;
         width: 20%;
         padding-bottom: 10px;
+        transition: all 500ms ease-in-out;
     }
 
     .check {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 5rem;
+        width: 0;
         background-color: $light-green;
         border-radius: 0 1rem 1rem 0;
+        visibility: hidden;
+        opacity: 0;
+        // transition: visibility 0s, opacity 0.5s;
+        transition: all 500ms ease-in-out;
 
         & .fa-check {
             display: flex;
@@ -102,17 +108,28 @@
             height: 1.5rem;
             background-color: white;
             border-radius: 50%;
+            visibility: visible;
+            opacity: 1;
 
         }
     }
 
     &:hover .btn-plate__side-price {
         width: 60%;
+        transition: all 500ms ease-in-out;
     }
 
     &:hover .price {
         width: 20%;
+        transition: all 500ms ease-in-out;
     }
+
+        &:hover .check {
+            width: 20%;
+            visibility: visible;
+            opacity: 1;
+            transition: all 500ms ease-in-out;
+        }
 }
 
 .d2 {
