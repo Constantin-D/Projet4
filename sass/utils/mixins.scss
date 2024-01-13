@@ -4,21 +4,30 @@
 
 @mixin hover-effect {
     transform: scale(1.1);
-} 
+}
 
 @mixin animated-heart {
     font-size: 1.5rem;
-        font-weight: bold;
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        transition-duration: all 1.2s;
-        background-image: linear-gradient(to bottom, $purple, $pink );
+    font-weight: bold;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition-duration: all 1.2s;
+    background-image: linear-gradient(to bottom, $purple, $pink );
 }
 
 @mixin ellipsis {
     text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
+@mixin menu-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 39.6rem;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 0.75rem;
+}

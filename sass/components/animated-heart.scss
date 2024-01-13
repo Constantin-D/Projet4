@@ -6,4 +6,19 @@
     -webkit-background-clip: text;
     transition: all 1.5s ease-in-out;
     background-image: linear-gradient(to bottom, $purple, $pink );
+
+    // &:hover {
+    //     // transform: scale(1.2);
+    //     /* Appliquez une transformation lors du survol */
+    //     transition: all 1.5s ease-in-out;
+    //     background-image: linear-gradient(to top, $purple, $pink );
+    // }
+        // .fa-heart:not(:hover) {
+        //     font-size: initial;
+        //     font-weight: normal;
+        //     color: transparent;
+        //     background-clip: text;
+        //     -webkit-background-clip: text;
+        //     background-image: linear-gradient(to bottom, $purple, $pink );
+        // }
 }

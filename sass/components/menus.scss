@@ -1,6 +1,8 @@
 // ****** Carte du restaurant *****/
 
-
+.menus-container {
+    background-color: white;
+}
 
 .main-menus {
     display: flex;
@@ -11,8 +13,6 @@
     margin-top: -3rem;
     background-color: $light-grey;
 
-
-
     .title-restaurant {
         display: flex;
         align-items: center;
@@ -21,27 +21,34 @@
         h1 {
             font-family: 'shrikhand', sans-serif;
             font-size: 1.75rem;
+        
         }
 
         .fa-heart {
             font-size: 1.5rem;
+            padding-right: 1rem;
         }
     }
 
-    // .titled span {
-    .titled::after {
+    .menu__titled {
+        font-size: 1rem;
+        font-weight: 200;
+        margin-top: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .menu__titled::after {
         content: '';
         display: block;
-        width: 3.5rem;
-        height: 2px;
+        width: 2.5rem;
+        height: 3px;
         background: $light-green;
+        margin-top: 5px;
+        padding-top: 2px;
     }
 }
 
-.menu .titled {
-    margin-top: 2.5rem;
-    margin-bottom: 0.5rem;
-}
+
 
 .btn-plate {
     display: flex;
@@ -124,13 +131,14 @@
         transition: all 500ms ease-in-out;
     }
 
-        &:hover .check {
-            width: 20%;
-            visibility: visible;
-            opacity: 1;
-            transition: all 500ms ease-in-out;
-        }
+    &:hover .check {
+        width: 20%;
+        visibility: visible;
+        opacity: 1;
+        transition: all 500ms ease-in-out;
+    }
 }
+
 
 .d2 {
     animation-delay: 1s;
@@ -144,8 +152,34 @@
 
 
 
-@media screen and (min-width:756px) {}
+@media screen and (min-width:756px) {
+    .main-menus {
+            max-width: 66rem;
+            margin-left: auto;
+            margin-right: auto;
+    
+            .title-restaurant {
+                display: flex;
+                justify-content: center;
+                padding-top: 3.1rem;
+                gap: 3rem;
+            }
+        .menu .menu-starters  {
+            @include menu-layout
+        }
+
+        .menu .menu-mains {
+            @include menu-layout
+        }
+        .menu .menu-desserts {
+            @include menu-layout
+        }
+
+    }
+}
 
 @media screen and (min-width:990px) {}
+
+
 
 @media screen and (min-width:1200px) {}

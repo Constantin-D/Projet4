@@ -3,18 +3,18 @@
     position: fixed;
     z-index: 5;
     top: 0;
-    right: 0;
+    // right: 0;
     bottom: 0;
-    left: 0;
+    // left: 0;
     width: 100%;
     height: 100%;
     background-color: white;
-    opacity: 0.8;
+    opacity: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     animation: fade-out 3s linear forwards;
-    animation-delay: -11s;
+    // animation-delay: -11s;
 }
 
 .loader {
@@ -49,6 +49,14 @@
     0% {
         opacity: 1;
     }
+
+    50% {
+        opacity: 1;
+    }
+
+    // 98% {
+    //     opacity: 1;
+    // }
 
     100% {
         opacity: 0;
