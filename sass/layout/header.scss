@@ -13,6 +13,13 @@ header {
             left: 10%;
             top: 45%;
         }
+
+}
+
+@media screen and (min-width:990px) {
+    header {
+        padding: 3rem 1.5rem;
+    }
 }
 
 

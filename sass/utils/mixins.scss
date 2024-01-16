@@ -1,18 +1,14 @@
-// @mixin header-shadow {
-//     box-shadow: 0 6px 15px lightgrey;
-// }
-
 @mixin hover-effect {
-    transform: scale(1.1);
+    transform: scale(1.01);
 }
 
 @mixin animated-heart {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-    transition-duration: all 1.2s;
+    transition: all 1.5s ease-in-out;
     background-image: linear-gradient(to bottom, $purple, $pink );
 }
 
@@ -30,4 +26,10 @@
     margin-left: auto;
     margin-right: auto;
     gap: 0.75rem;
+}
+
+@mixin index-layout {
+    max-width: 66rem;
+    margin-left: auto;
+    margin-right: auto;
 }

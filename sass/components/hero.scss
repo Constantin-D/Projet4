@@ -23,7 +23,7 @@
         margin-top: 2rem;
     }
 
-        .hero__btn-restaurant:hover {
+    .hero__btn-restaurant:hover {
         opacity: 0.9;
         box-shadow: 0 4px 4px 0 rgba($color: #000000, $alpha: 0.5);
     }
@@ -31,8 +31,8 @@
 
 @media screen and (min-width:756px) {
     .hero__title br {
-            display: none;
-        }
+        display: none;
+    }
 }
 
 @media screen and (min-width:990px) {}

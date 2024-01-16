@@ -9,7 +9,7 @@
     width: 100%;
     height: 100%;
     background-color: white;
-    opacity: 1;
+    opacity: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,6 +28,7 @@
     height: 50px;
     animation: spin 1s linear infinite;
     /* Rotation animation */
+    
 }
 
 @keyframes spin {
@@ -53,10 +54,6 @@
     50% {
         opacity: 1;
     }
-
-    // 98% {
-    //     opacity: 1;
-    // }
 
     100% {
         opacity: 0;

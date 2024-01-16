@@ -147,12 +147,8 @@
 .d3 {
     animation-delay: 2s;
 }
-
-
-
-
-
 @media screen and (min-width:756px) {
+
     .main-menus {
             max-width: 66rem;
             margin-left: auto;
@@ -164,6 +160,7 @@
                 padding-top: 3.1rem;
                 gap: 3rem;
             }
+
         .menu .menu-starters  {
             @include menu-layout
         }
@@ -171,6 +168,7 @@
         .menu .menu-mains {
             @include menu-layout
         }
+
         .menu .menu-desserts {
             @include menu-layout
         }
@@ -178,8 +176,3 @@
     }
 }
 
-@media screen and (min-width:990px) {}
-
-
-
-@media screen and (min-width:1200px) {}

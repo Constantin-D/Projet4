@@ -14,7 +14,7 @@
         background-color: $light-grey;
         border-radius: 1.2rem;
         border: 0.5rem;
-        box-shadow: 0 12px 4px 0 rgba($color: #000000, $alpha: 0.1);
+        box-shadow: 0 4px 15px 0 rgba($color: #000000, $alpha: 0.15);
         margin-bottom: 1.5rem;
         margin-right: auto;
         margin-left: 0.8rem;
@@ -42,16 +42,22 @@
 
 .functioning-container a:hover {
     @include hover-effect;
+    box-shadow: 0 4px 15px 0 rgba($color: #000000, $alpha: 0.2);
 }
 
 @media screen and (min-width:756px) {
+    .functioning-container {
+       @include index-layout;
+    }
+
     .functioning-container__layout {
         display: flex;
         flex-direction: row;
         gap: 2%;
+
     }
 
-    
+
 }
 
 @media screen and (min-width:990px) {}
