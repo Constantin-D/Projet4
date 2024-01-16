@@ -52,6 +52,7 @@ header .fa-arrow-left {
 @media screen and (min-width: 990px) {
   header {
     padding: 3rem 1.5rem;
+    box-shadow: unset;
   }
 }
 /****** Pied de page ******/
@@ -380,9 +381,9 @@ header .fa-arrow-left {
 
 @media screen and (min-width: 756px) {
   .functioning-container {
-    max-width: 66rem;
     margin-left: auto;
     margin-right: auto;
+    width: 80%;
   }
   .functioning-container__layout {
     display: flex;
@@ -470,10 +471,10 @@ p {
     display: flex;
     align-items: flex-start;
   }
-  h3 {
-    max-width: 66rem;
+  .restaurant h3 {
     margin-left: auto;
     margin-right: auto;
+    width: 80%;
     padding-bottom: 1.75rem;
   }
   .cards-restaurants {
@@ -481,9 +482,9 @@ p {
     flex-flow: row wrap;
     gap: 3.1rem 4rem;
     justify-content: space-between;
-    max-width: 66rem;
     margin-left: auto;
     margin-right: auto;
+    width: 80%;
   }
   .cards-restaurants a {
     width: 45%;

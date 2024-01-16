@@ -29,7 +29,9 @@
 }
 
 @mixin index-layout {
-    max-width: 66rem;
+    // max-width: 66rem;
     margin-left: auto;
     margin-right: auto;
+    width: 80%;
+    
 }
