@@ -1,7 +1,3 @@
-// .menus-container {
-//     background: $light-grey;
-// }
-
 // ******* Bannière *******/
 .menus-container__banner {
     & img {
@@ -21,11 +17,4 @@
         }
     }
 }
-@media screen and (min-width:1200px) {
-    // .menus-container__banner {
-    //         & img {
-    //             width: 100%;
-    //             height: 24rem;
-    //         }
-    //     }
-}
+@media screen and (min-width:1200px) {}

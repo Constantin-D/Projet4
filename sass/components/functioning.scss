@@ -47,7 +47,7 @@
 
 @media screen and (min-width:756px) {
     .functioning-container {
-       @include index-layout;
+        @include index-layout;
     }
 
     .functioning-container__layout {

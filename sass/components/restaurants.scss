@@ -4,18 +4,18 @@
     flex-direction: column;
     background-color: $light-grey;
     background-size: 100%;
-    padding: $padding;
-
+    padding: 2rem 1.5rem;
     margin: 0;
+    & h3 {
+        font-size: 1.5rem;
+    }
 }
 
 .cards-restaurants {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // background: white;
     width: 100%;
-    // margin-bottom: 1.3rem;
 
     a {
         background: white;
@@ -79,19 +79,21 @@ p {
 
 @media screen and (min-width:756px) {
     .restaurant {
-
+        display: flex;
+        align-items: flex-start;
     }
 
     h3 {
     max-width: 66rem;
         margin-left: auto;
-        margin-right: auto
+        margin-right: auto;
+        padding-bottom: 1.75rem;
     }
 
     .cards-restaurants {
         display: flex;
         flex-flow: row wrap;
-        gap: 3.1rem 6rem;
+        gap: 3.1rem 4rem;
         justify-content: space-between;
         @include index-layout;
 
@@ -102,15 +104,6 @@ p {
 
         }
     }
-
-    // display: flex;
-    // padding: 0rem 11.25rem;
-    // flex-direction: column;
-    // align-items: flex-start;
-    // gap: 1.75rem;
-
-
-
 }
 
 @media screen and (min-width:990px) {}
