@@ -7,7 +7,7 @@
     padding: 2rem 1.5rem;
     margin: 0;
 
-    & h3 {
+    & h2 {
         font-size: 1.5rem;
     }
 }
@@ -83,10 +83,8 @@ p {
         display: flex;
         align-items: flex-start;
 
-        h3 {
+        h2 {
             @include index-layout;
-            // margin-left: 0;
-            // margin-right: auto;
             padding-bottom: 1.75rem;
         }
     }
@@ -103,12 +101,14 @@ p {
 
         & a {
 
-            width: 45%;
+            width: 40%;
 
         }
     }
 }
 
-@media screen and (min-width:990px) {}
+@media screen and (min-width:990px) {
+
+}
 
 @media screen and (min-width:1200px) {}

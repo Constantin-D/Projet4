@@ -30,7 +30,14 @@
         }
     }
 }
-// @media screen and (min-width:756px) {}
+
+@media screen and (min-width:756px) {
+    .links {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+}
 
 @media screen and (min-width:990px) {
     .links {

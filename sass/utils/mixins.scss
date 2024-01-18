@@ -32,6 +32,10 @@
     // max-width: 66rem;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 85%;
     
+}
+
+@mixin transition-checks {
+    transition: all 500ms ease-in-out;
 }

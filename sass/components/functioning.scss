@@ -47,7 +47,10 @@
 
 @media screen and (min-width:756px) {
     .functioning-container {
-        @include index-layout;
+        // @include index-layout;
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
     }
 
     .functioning-container__layout {
