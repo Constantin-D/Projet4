@@ -82,6 +82,7 @@ p {
     .restaurant {
         display: flex;
         align-items: flex-start;
+        padding: 2rem 0rem;
 
         h2 {
             @include index-layout;
@@ -92,23 +93,29 @@ p {
 
 
     .cards-restaurants {
-        display: flex;
+        // display: flex;
         flex-flow: row wrap;
         gap: 3.1rem 4rem;
-        justify-content: space-between;
+        // justify-content: space-between;
         @include index-layout;
 
 
         & a {
 
             width: 40%;
+            .cards-restaurants__card img {
+                height: 14.5rem;
+                width: 100%;
+            }
 
         }
     }
 }
 
 @media screen and (min-width:990px) {
-
+    .cards-restaurants a {
+        width: 44%;
+    }
 }
 
 @media screen and (min-width:1200px) {}

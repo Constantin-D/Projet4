@@ -477,6 +477,7 @@ p {
   .restaurant {
     display: flex;
     align-items: flex-start;
+    padding: 2rem 0rem;
   }
   .restaurant h2 {
     margin-left: auto;
@@ -485,16 +486,23 @@ p {
     padding-bottom: 1.75rem;
   }
   .cards-restaurants {
-    display: flex;
     flex-flow: row wrap;
     gap: 3.1rem 4rem;
-    justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
     width: 85%;
   }
   .cards-restaurants a {
     width: 40%;
+  }
+  .cards-restaurants a .cards-restaurants__card img {
+    height: 14.5rem;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 990px) {
+  .cards-restaurants a {
+    width: 44%;
   }
 }
 .menus-container__banner img {
