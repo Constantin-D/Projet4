@@ -39,3 +39,11 @@
 @mixin transition-checks {
     transition: all 500ms ease-in-out;
 }
+
+@mixin main-flex {
+    display: flex;
+        flex-direction: column;
+        min-width: 320px;
+        width: 100%;
+        box-sizing: border-box;
+}
