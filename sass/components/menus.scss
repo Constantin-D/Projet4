@@ -162,15 +162,15 @@
             }
 
         .menu .menu-starters  {
-            @include menu-layout
+            @include menu-layout;
         }
 
         .menu .menu-mains {
-            @include menu-layout
+            @include menu-layout;
         }
 
         .menu .menu-desserts {
-            @include menu-layout
+            @include menu-layout;
         }
 
     }

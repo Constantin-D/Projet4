@@ -15,7 +15,12 @@ body {
 
 
 .main-container {
-   @include main-flex;
+    //    @include main-flex;
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 a {
@@ -26,4 +31,3 @@ a {
 img {
     object-fit: cover;
 }
-
