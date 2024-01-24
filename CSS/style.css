@@ -57,7 +57,7 @@ header .fa-arrow-left {
 }
 /****** Pied de page ******/
 .links {
-  background-color: black;
+  background-color: #353535;
   width: 100%;
   color: white;
   padding-bottom: 1rem;
@@ -137,7 +137,7 @@ header .fa-arrow-left {
 }
 .main-menus .title-restaurant h1 {
   font-family: "shrikhand", sans-serif;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 .main-menus .title-restaurant .fa-heart {
   font-size: 1.5rem;
@@ -170,6 +170,7 @@ header .fa-arrow-left {
   animation-fill-mode: backwards;
 }
 .btn-plate .btn-plate__side-price {
+  font-size: 1rem;
   padding-top: 0;
   padding-right: 0.7rem;
   position: relative;
@@ -177,6 +178,7 @@ header .fa-arrow-left {
   transition: all 500ms ease-in-out;
 }
 .btn-plate .btn-plate__side-price .plate {
+  font-size: 0.95rem;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -185,6 +187,7 @@ header .fa-arrow-left {
   margin: 0;
 }
 .btn-plate .btn-plate__side-price .side-dish {
+  font-size: 0.75rem;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -198,7 +201,7 @@ header .fa-arrow-left {
   align-items: flex-end;
   font-weight: 900;
   width: 20%;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   transition: all 500ms ease-in-out;
 }
 .btn-plate .check {
@@ -331,6 +334,7 @@ header .fa-arrow-left {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   margin-bottom: 3rem;
   margin-top: 2rem;
+  transition: all 400ms;
 }
 .hero .hero__btn-restaurant:hover {
   opacity: 0.9;
@@ -362,6 +366,7 @@ header .fa-arrow-left {
   margin-bottom: 1.5rem;
   margin-right: auto;
   margin-left: 0.8rem;
+  transition: all 400ms;
 }
 .functioning-container__btn-function .icon-nbr {
   display: flex;
@@ -533,6 +538,7 @@ p {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   margin-bottom: 3rem;
   margin-top: 2rem;
+  transition: all 400ms;
 }
 .order .btn-order:hover {
   opacity: 0.9;
@@ -547,6 +553,7 @@ p {
   -webkit-background-clip: text;
   transition: all 1.5s ease-in-out;
   background-image: linear-gradient(to bottom, #9356dc, #FF79DA);
+  transition: all 400ms;
 }
 
 .fixed-page {

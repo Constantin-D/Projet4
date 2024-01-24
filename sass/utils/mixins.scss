@@ -2,6 +2,10 @@
     transform: scale(1.01);
 }
 
+@mixin return-transform {
+    transition: all 400ms;
+}
+
 @mixin animated-heart {
     font-size: 1.5rem;
     font-weight: bold;

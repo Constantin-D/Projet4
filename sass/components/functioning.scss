@@ -18,6 +18,7 @@
         margin-bottom: 1.5rem;
         margin-right: auto;
         margin-left: 0.8rem;
+        @include return-transform;
 
         & .icon-nbr {
             display: flex;
