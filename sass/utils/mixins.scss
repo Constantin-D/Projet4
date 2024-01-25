@@ -3,7 +3,7 @@
 }
 
 @mixin return-transform {
-    transition: all 400ms;
+    transition: all 400ms ease-in-out;
 }
 
 @mixin animated-heart {

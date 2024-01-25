@@ -199,6 +199,7 @@ header .fa-arrow-left {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  font-size: 0.9rem;
   font-weight: 900;
   width: 20%;
   padding-bottom: 15px;
@@ -366,7 +367,7 @@ header .fa-arrow-left {
   margin-bottom: 1.5rem;
   margin-right: auto;
   margin-left: 0.8rem;
-  transition: all 400ms;
+  transition: all 400ms ease-in-out;
 }
 .functioning-container__btn-function .icon-nbr {
   display: flex;
@@ -468,15 +469,6 @@ p {
   bottom: 3rem;
   font-size: 1.5rem;
 }
-.card-heart .fa-heart:hover {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  transition: all 1.5s ease-in-out;
-  background-image: linear-gradient(to bottom, #9356dc, #FF79DA);
-}
 
 @media screen and (min-width: 756px) {
   .restaurant {
@@ -538,13 +530,16 @@ p {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   margin-bottom: 3rem;
   margin-top: 2rem;
-  transition: all 400ms;
+  transition: all 400ms ease-in-out;
 }
 .order .btn-order:hover {
   opacity: 0.9;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
 }
 
+.fa-heart {
+  transition: all 1.5s ease-in-out;
+}
 .fa-heart:hover {
   font-size: 1.5rem;
   font-weight: bold;
@@ -553,7 +548,6 @@ p {
   -webkit-background-clip: text;
   transition: all 1.5s ease-in-out;
   background-image: linear-gradient(to bottom, #9356dc, #FF79DA);
-  transition: all 400ms;
 }
 
 .fixed-page {

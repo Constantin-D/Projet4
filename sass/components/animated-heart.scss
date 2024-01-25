@@ -1,7 +1,13 @@
+.fa-heart{
+    transition: all 1.5s ease-in-out;
+    &:hover {
 
-.fa-heart:hover {
-    
-    @include animated-heart;
-    @include return-transform;
-    
+        @include animated-heart;
+        //@include return-transform;
+    }
 }
+// .fa-heart:hover {
+//     @include animated-heart;
+//     @include return-transform;
+    
+// }
